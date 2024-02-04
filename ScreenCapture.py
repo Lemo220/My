@@ -2,6 +2,7 @@ import dxcam
 import cv2
 import numpy as np
 
+
 class ScreenCapture:
     def __init__(self):
         self.cam = dxcam.create()
