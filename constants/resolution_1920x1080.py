@@ -19,3 +19,10 @@ SUB_ELEMENTS_CORDS = {
     7: {"posy1": 475, "posy2": 495},
     8: {"posy1": 505, "posy2": 520},
 }
+
+AREA_NAME_CORDS = {
+    "posx1": 1667,
+    "posy1": 1040,
+    "posx2": 1805,
+    "posy2": 1058,
+}
