@@ -6,9 +6,15 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 def recognize_number(image):
     # Assuming image is a cropped OpenCV image
-    custom_config = r"--oem 3 --psm 6 outputbase digits"
-    number = pytesseract.image_to_string(Image.fromarray(image), config=custom_config)
-    return number
+    custom_config = r"--oem 3 --psm 6 -c tessedit_char_whitelist=0123456789"
+    number_str = pytesseract.image_to_string(
+        Image.fromarray(image), config=custom_config
+    )
+
+    # Usunięcie wszystkich znaków oprócz cyfr
+    filtered_number_str = "".join(filter(str.isdigit, number_str))
+
+    return filtered_number_str
 
 
 def recognize_text(image):

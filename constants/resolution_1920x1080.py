@@ -8,6 +8,8 @@ ENCHANT_DROPDOWN_CORDS = {"posx1": 1045, "posx2": 1020, "posy1": 1160, "posy2": 
 
 QUALITY_DROPDOWN_CORDS = {"posx1": 1190, "posx2": 1020, "posy1": 1300, "posy2": 280}
 
+TRASH_ITEM_POS = {"posx1": 590, "posx2": 650, "posy1": 400, "posy2": 459}
+
 SUB_ELEMENTS_CORDS = {
     0: {"posy1": 285, "posy2": 305},
     1: {"posy1": 315, "posy2": 335},
@@ -25,4 +27,11 @@ AREA_NAME_CORDS = {
     "posy1": 1040,
     "posx2": 1805,
     "posy2": 1058,
+}
+
+CLEAR_NAME_CORDS = {
+    "posx1": 713,
+    "posy1": 260,
+    "posx2": 730,
+    "posy2": 277,
 }
